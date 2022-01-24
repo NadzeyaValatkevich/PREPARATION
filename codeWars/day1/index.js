@@ -50,3 +50,53 @@ function greet (name, owner) {
         return "Hello guest";
     };
 };
+
+//task6
+function removeExclamationMarks(s) {
+    return s.replace(/!/g, '');
+};
+
+//task7
+function stringToArray(string){
+    return string.split(' ');
+};
+
+//task8
+function grow(x) {
+    let mult = 1;
+    for(let i of x) {
+        mult *= i;
+    };
+    return mult;
+};
+
+//task9
+function findOdd(array) {
+    let count = 0;
+    let last;
+
+    array.sort();
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === last) {
+            count++;
+            continue;
+        } 
+        if (count % 2) return last;
+        last = array[i];
+        count = 1;
+    }
+    return last;
+};
+
+//task10
+function addBinary(a,b) {
+    let multy = a + b;
+    let binary = (multy % 2).toString();
+    while(multy > 1) {
+        multy = parseInt(multy / 2);
+        binary = (multy % 2) + binary;
+    };
+    return binary;
+};
+
