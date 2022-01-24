@@ -22,3 +22,31 @@ function findNeedle(haystack) {
 };
 
 //task3
+function litres(time) {
+    return Math.floor(time * 0.5);
+};
+console.log(litres(11.8));
+
+//task4
+function basicOp(operation, value1, value2)
+{
+  if(operation === '+') {
+    return value1 + value2;
+  }
+  else if(operation === '-') {
+    return value1 - value2;
+  } else if(operation === '*') {
+    return value1 * value2;
+  } else if(operation === '/') {
+    return value1 / value2;
+  };
+};
+
+//task5
+function greet (name, owner) {
+    if(name === owner) {
+        return "Hello boss";
+    } else {
+        return "Hello guest";
+    };
+};
