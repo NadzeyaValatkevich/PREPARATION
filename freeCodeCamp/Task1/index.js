@@ -58,3 +58,23 @@ const HIGH_TEMPERATURES = {
 
 const { today } = HIGH_TEMPERATURES;
 const { tomorrow } = HIGH_TEMPERATURES;
+
+//task 11
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+  
+const { today: highToday } = HIGH_TEMPERATURES;
+const { tomorrow: highTomorroww } = HIGH_TEMPERATURES; 
+
+//task 12
+const LOCAL_FORECAST = {
+  yesterday: { low: 61, high: 75 },
+  today: { low: 64, high: 77 },
+  tomorrow: { low: 68, high: 80 }
+};
+ 
+const LOCAL_FORECAST = { today: {low: lowToday}};
+const LOCAL_FORECAST = { today: {high: highToday}}; 
