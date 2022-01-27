@@ -100,3 +100,42 @@ function addBinary(a,b) {
     return binary;
 };
 
+//task 11
+function isTriangle(a,b,c)
+{ if(a <= 0 || b <= 0 || c <= 0) {
+  return false 
+} 
+  if(a + b > c && a + c > b && b + c > a) {
+  return true;
+}
+   return false;
+}
+
+//task 12
+function hero(bullets, dragons){
+    return (bullets / 2) >=  dragons ? true : false;
+};
+
+console.log(hero(7,4));
+
+//task 13
+function lovefunc(flower1, flower2){
+    if(!(flower1 % 2) && (flower2 % 2)) {
+      return true;
+    } if(!(flower2 % 2) && (flower1 % 2)) {
+      return true;
+    } return false;
+  }
+
+// task 14
+function highAndLow(numbers){
+    const arr = numbers.split(" ").map(item => Number(item)).sort((a,b) => b - a)
+      return String(arr[0] + " " + String(arr[arr.length - 1]))
+  }
+
+
+// task 15
+function repeatStr (n, s) {
+    return s.repeat(n);
+  }
+  
