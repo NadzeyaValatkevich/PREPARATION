@@ -138,4 +138,26 @@ function highAndLow(numbers){
 function repeatStr (n, s) {
     return s.repeat(n);
   }
-  
+
+// task 16
+function maps(x){
+  return x.map(item => item * 2);
+  }
+
+  //task 17
+  function squareSum(numbers){
+    let sum = 0;
+    for(let item of numbers) {
+      sum += (item ** 2);
+    };
+    return sum;
+  }
+
+  //task 18
+  function feast(beast, dish) {
+    // const newbeast = beast.split('');
+    if(beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]) {
+      return true;
+    } return false;
+    };
+  console.log(feast ("brown bear", "bear claw"));
