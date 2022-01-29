@@ -161,3 +161,32 @@ function maps(x){
     } return false;
     };
   console.log(feast ("brown bear", "bear claw"));
+
+  //task19
+  function sumMix(x){
+    return x.reduce(function(sum, current) {
+    return sum + parseFloat(current);
+  },0);
+  };
+  
+  console.log(sumMix([9, 3, '7', '3']));
+
+  //task20
+  function even_or_odd(number) {
+    if(!(number % 2)) {
+      return 'Even'
+    } return 'Odd' 
+  };
+
+  //task21
+  function fakeBin(x){
+    let a = '';
+    for(let i = 0; i <= x.length - 1; i++) {
+      if(Number(x[i]) < 5) {
+        a += 0;
+      } else {
+        a += 1;
+      }
+    }
+    return a;
+  }
