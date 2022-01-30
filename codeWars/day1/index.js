@@ -190,3 +190,26 @@ function maps(x){
     }
     return a;
   }
+
+  //task22
+  function twiceAsOld(dadYearsOld, sonYearsOld) {
+    const year = (dadYearsOld - (sonYearsOld * 2));
+    if(year < 0) {
+      return -year;
+    } return year;
+  };
+  console.log(twiceAsOld(36, 7));
+  
+  //task 23
+  var stringToNumber = function(str){
+    return parseFloat(str);
+  }
+  
+  console.log(stringToNumber("1234"));
+  console.log(stringToNumber("-7"));
+  
+  //task 24
+  function setAlarm(employed, vacation){
+    return (employed && !vacation) ? true : false;
+    };
+    console.log(setAlarm(true, false));
