@@ -212,4 +212,41 @@ function maps(x){
   function setAlarm(employed, vacation){
     return (employed && !vacation) ? true : false;
     };
-    console.log(setAlarm(true, false));
+  console.log(setAlarm(true, false));
+
+  //task 25 Welcome!
+  function greet(language) {
+    let obj = {
+        english: 'Welcome',
+        czech: 'Vitejte',
+        danish: 'Velkomst',
+        dutch: 'Welkom',
+        estonian: 'Tere tulemast',
+        finnish: 'Tervetuloa',
+        flemish: 'Welgekomen',
+        french: 'Bienvenue',
+        german: 'Willkommen',
+        irish: 'Failte',
+        italian: 'Benvenuto',
+        latvian: 'Gaidits',
+        lithuanian: 'Laukiamas',
+        polish: 'Witamy',
+        spanish: 'Bienvenido',
+        swedish: 'Valkommen',
+        welsh: 'Croeso'
+    };
+    return (obj[language] === undefined ? 'Welcome' : obj[language])    
+};
+
+console.log(greet('english'));
+console.log(greet('flemish'));
+console.log(greet('IP_ADDRESS_INVALID'));
+
+//task 26 Can we divide it?
+function isDivideBy(number, a, b) {
+  return ((number % a === 0) && (number % b === 0)) ? true : false;
+};
+console.log(isDivideBy(-12, 2, -5));
+
+
+    
