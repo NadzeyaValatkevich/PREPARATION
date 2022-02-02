@@ -78,3 +78,38 @@ const LOCAL_FORECAST = {
  
 const LOCAL_FORECAST = { today: {low: lowToday}};
 const LOCAL_FORECAST = { today: {high: highToday}}; 
+
+//task 13 Return a Value from a Function with Return
+function timesFive(num) {
+  return (num * 5);
+};
+
+const val = timesFive(5);
+
+//task 14  Global Scope and Functions
+// Declare the myGlobal variable below this line
+const myGlobal = 10;
+var oopsGlobal;
+function fun1() {
+  oopsGlobal = 5;
+
+}
+
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+};
+
+//task 15 Use Destructuring Assignment to Assign Variables from Arrays
+let a = 8, b = 6;
+// Only change code below this line
+[a, b] = [b, a];
+console.log(a, b);
