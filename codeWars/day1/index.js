@@ -248,5 +248,25 @@ function isDivideBy(number, a, b) {
 };
 console.log(isDivideBy(-12, 2, -5));
 
+//task 27 Vowel Count
+function getCount(str) {
+  var vowelsCount = 0;
+  const array = str.toLowerCase().split('');
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  array.forEach((item) => {
+        
+    vowels.forEach((elem) => {
+        
+        if (item === elem) {
+            return vowelsCount += 1;
+        }; 
+    });   
+});
+  return vowelsCount;
+}
+
+console.log(getCount("abracadabra"))
+
 
     
