@@ -269,4 +269,17 @@ function getCount(str) {
 console.log(getCount("abracadabra"))
 
 
+//tasks 27 Sum of positive
+function positiveSum(arr) {
+  const sum = arr.reduce((accum, item) => {
+    if(item > 0) {
+      accum += item
+    } 
+    return accum;
+  }, 0);
+  return sum; 
+};
+
+
+
     
