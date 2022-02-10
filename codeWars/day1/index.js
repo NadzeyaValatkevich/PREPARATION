@@ -280,6 +280,16 @@ function positiveSum(arr) {
   return sum; 
 };
 
+//task 28 You Can't Code Under Pressure #1
+
+function doubleInteger(i) {
+  i *= 2;
+  
+  return i;
+};
+
+console.log(doubleInteger(2));
+
 
 
     
