@@ -290,6 +290,27 @@ function doubleInteger(i) {
 
 console.log(doubleInteger(2));
 
+//task 29 Categorize New Member
+
+function openOrSenior(data){
+  const outPut = data.map((el) => ((el[0]) >= 55) ? 'Senior' : 'Open');
+  return outPut
+ };
+ 
+
+ //task 30 The highest profit wins!
+ function minMax(arr){
+  let newArr = [];
+  if(arr.length > 1) {
+   newArr[0] = Math.min(...arr);
+   newArr[1] = Math.max(...arr);
+   
+  } else newArr = [arr[0], arr[0]]; 
+  return newArr; 
+};
+console.log(minMax([1]));
+
+
 
 
     
