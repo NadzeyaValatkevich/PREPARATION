@@ -310,6 +310,17 @@ function openOrSenior(data){
 };
 console.log(minMax([1]));
 
+//task 32 Remove First and Last Character
+function removeChar(str){
+  let newArray
+newArray = str.split('');
+newArray.shift();
+newArray.pop();
+return newArray.join("")
+ };
+
+ console.log(removeChar('removeChar'));
+
 
 
 
