@@ -321,6 +321,14 @@ return newArray.join("")
 
  console.log(removeChar('removeChar'));
 
+ //task 33 Sentence Smash
+ function smash (words) {
+  return words.join(" ")
+};
+
+console.log(smash(['hello', 'world', 'this', 'is', 'great']));
+
+
 
 
 
