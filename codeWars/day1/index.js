@@ -328,6 +328,16 @@ return newArray.join("")
 
 console.log(smash(['hello', 'world', 'this', 'is', 'great']));
 
+//task 34 Square Every Digit
+function squareDigits(num) {
+  let number = num.toString().split("").map((elem) => elem ** 2).join('')
+  return parseInt(number);
+}
+
+console.log(squareDigits(3212));
+
+
+
 
 
 
