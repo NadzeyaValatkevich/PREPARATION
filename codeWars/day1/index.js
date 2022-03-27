@@ -336,10 +336,12 @@ function squareDigits(num) {
 
 console.log(squareDigits(3212));
 
+//task 35 Remove All The Marked Elements of a List
 
+Array.prototype.remove_ = function(integer_list, values_list){
+  return integer_list.filter(elem => !values_list.includes(elem)) 
+  
+};
 
-
-
-
-
+console.log(Array.prototype.remove_([1, 1, 2 ,3 ,1 ,2 ,3 ,4], [1, 3]));
     
