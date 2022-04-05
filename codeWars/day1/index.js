@@ -321,7 +321,40 @@ return newArray.join("")
 
  console.log(removeChar('removeChar'));
 
+ //task 33 Sentence Smash
+ function smash (words) {
+  return words.join(" ")
+};
 
+console.log(smash(['hello', 'world', 'this', 'is', 'great']));
 
+//task 34 Square Every Digit
+function squareDigits(num) {
+  let number = num.toString().split("").map((elem) => elem ** 2).join('')
+  return parseInt(number);
+}
 
+console.log(squareDigits(3212));
+
+//task 35 Remove All The Marked Elements of a List
+
+Array.prototype.remove_ = function(integer_list, values_list){
+  return integer_list.filter(elem => !values_list.includes(elem)) 
+  
+};
+
+console.log(Array.prototype.remove_([1, 1, 2 ,3 ,1 ,2 ,3 ,4], [1, 3]));
+
+//task 36 Multiples of 3 or 5
+
+function solution(number) {
+  let sum = 0;
+  for(let i = 1; i < number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) { 
+      sum += i
+     }
+}
+return sum
+}
+console.log(solution(10));
     
