@@ -357,4 +357,11 @@ function solution(number) {
 return sum
 }
 console.log(solution(10));
+
+//task 37 Array.diff
+
+function arrayDiff(a,b) {
+  return a.filter(elem => !b.includes(elem));
+}
+console.log(arrayDiff([1,2,3], [1,2]));
     
