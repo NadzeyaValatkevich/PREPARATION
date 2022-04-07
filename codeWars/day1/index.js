@@ -364,4 +364,27 @@ function arrayDiff(a,b) {
   return a.filter(elem => !b.includes(elem));
 }
 console.log(arrayDiff([1,2,3], [1,2]));
+
+//task 38 Count characters in your string
+
+function count (string) {
+
+  let array = string.split('');
+  let newArray = {};
+  if(array.length !== 0) {
+    for(let i of array) {
+      if(!newArray[i]) {
+        newArray[i] = 1;
+      } else {
+        newArray[i] += 1;
+      }
+    }
+    return newArray;
+  } else {
+    return {};
+  }
+ 
+};
+
+console.log(count(''));
     
