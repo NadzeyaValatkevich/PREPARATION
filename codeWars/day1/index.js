@@ -387,4 +387,20 @@ function count (string) {
 };
 
 console.log(count(''));
+
+// task 39 Sum of Digits / Digital Root
+
+function digital_root(n) {
+  
+  let sum = 0;
+ let array = n.toString().split('');
+ for(let i of array) {
+   sum += +i ;
+   (sum.toString().length > 1) ? digital_root(sum) : sum;
+ }
+ return (sum.toString().length > 1) ? digital_root(sum) : sum;
+
+}
+
+console.log(digital_root(942));
     
