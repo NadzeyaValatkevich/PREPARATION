@@ -403,4 +403,25 @@ function digital_root(n) {
 }
 
 console.log(digital_root(942));
+
+//task 40 Bit Counting
+
+var countBits = function(n) {
+  let array = [];
+  while(n > 0) {
+    if(n % 2 === 0) {
+      array.unshift(0) 
+    } else {
+      array.unshift(1);
+    };
+    n = parseInt(n / 2);
+  }
+  return array.reduce((accum, item) => {
+    if(item === 1) {
+      return accum += item
+    } return accum;
+  }, 0)
+};
+
+console.log(countBits(4));
     
