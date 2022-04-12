@@ -431,4 +431,16 @@ function filter_list(l) {
   return l.filter(elem => typeof(elem) === 'number');
   }
   
-  console.log(filter_list([1,2,'aasf','1','123',123]));  
+  console.log(filter_list([1,2,'aasf','1','123',123])); 
+  
+  //task 42 Find The Parity Outlier
+
+  function findOutlier(integers){
+    const newArray = integers.filter(elem => elem % 2 === 0);
+    const newArray2 = integers.filter(elem => elem % 2 !== 0);
+    if(newArray.length === 1) {
+      return newArray[0];
+    } else return newArray2[0]
+  };
+  
+  console.log(findOutlier([0, 1, 2]));
