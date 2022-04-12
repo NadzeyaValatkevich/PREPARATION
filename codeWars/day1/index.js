@@ -424,4 +424,11 @@ var countBits = function(n) {
 };
 
 console.log(countBits(4));
-    
+  
+//task 41  List Filtering
+
+function filter_list(l) {
+  return l.filter(elem => typeof(elem) === 'number');
+  }
+  
+  console.log(filter_list([1,2,'aasf','1','123',123]));  
