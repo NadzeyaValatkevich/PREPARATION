@@ -444,3 +444,23 @@ function filter_list(l) {
   };
   
   console.log(findOutlier([0, 1, 2]));
+
+  //task 43 Unique In Order
+
+  var uniqueInOrder=function(iterable){
+    if(typeof iterable === String) {
+        iterable = iterable.split('')
+    }
+
+    let newArray = [iterable[0]]
+
+    for(let i of iterable) {
+        if(i !== newArray[newArray.length-1]) {
+            newArray.push(i)
+        }
+    }
+   return newArray
+  }
+
+  console.log(uniqueInOrder([1,2,2,3,3]))
+  
