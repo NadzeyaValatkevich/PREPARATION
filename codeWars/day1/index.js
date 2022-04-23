@@ -480,5 +480,29 @@ function filter_list(l) {
         return arr[i];
     }
       
-  }  
+  };
+
+  //task 45 Delete occurrences of an element if it occurs more than n times
+
+  function deleteNth(arr,n){
+    let newArray = [];
+   for(let i of arr) {
+       if(!newArray.includes(i)) {
+        newArray.push(i);  
+       } else { 
+           let num = newArray.reduce((acc, elem) => {
+            if(i === elem) {
+                 acc += 1
+            }
+            return acc; 
+        }, 0);
+        if (num < n) {
+            newArray.push(i)
+        }
+     }   
+   }
+   return newArray;
+  };
+
+  console.log(deleteNth([1,1,3,3,7,2,2,2,2], 3));
   
