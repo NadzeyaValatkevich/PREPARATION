@@ -505,4 +505,19 @@ function filter_list(l) {
   };
 
   console.log(deleteNth([1,1,3,3,7,2,2,2,2], 3));
+
+  //task 46 Write Number in Expanded Form
+  function expandedForm(num) {
+    let newNum = num.toString().split('').reverse();
+    let array = [];
+    array.push(+newNum[0]);
+    let n = 1;
+    for (let i=1; i <= newNum.length - 1; i++) {
+      array.unshift(newNum[i] * (10**n));
+      n++;
+    } ;
+    
+   return array.filter((elem) => elem !== 0).join(" + ") 
+   }
+   console.log(expandedForm(70304))
   
