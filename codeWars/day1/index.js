@@ -519,5 +519,13 @@ function filter_list(l) {
     
    return array.filter((elem) => elem !== 0).join(" + ") 
    }
-   console.log(expandedForm(70304))
+   console.log(expandedForm(70304));
+
+   //task 46 Descending Order (7kyu)
+   function descendingOrder(n){
+    let newN = String(n).split("").sort((a,b) => b - a).join("");
+    return +newN;
+  };
+  
+  console.log(descendingOrder(24451));
   
