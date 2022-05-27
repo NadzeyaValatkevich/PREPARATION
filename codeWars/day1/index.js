@@ -528,4 +528,33 @@ function filter_list(l) {
   };
   
   console.log(descendingOrder(24451));
+
+  //task 47 Regex validate PIN code(7 kyu)
+
+  function validatePIN (pin) {
+    let array = pin.split("");
+     let count = array.reduce((accum, elem) => {
+      if(typeof +elem === 'number' && !(isNaN(+elem))) {
+        return accum += 1;
+      }
+    }, 0);
+    
+    if(count === 4 || count === 6) {
+      return true
+    } return false
+  };
+  
+  console.log(validatePIN('-6.348'));
+
+  //task 48 Mumbling(7 kyu)
+
+  function accum(s) {
+    let array = s.split("").map((elem, index) => {
+      return (elem.toUpperCase() + elem.toLowerCase().repeat(index))
+    });
+    
+    return array.join('-');
+   };
+   
+   console.log(accum("ZpglnRxqenU"));
   
