@@ -544,5 +544,17 @@ function filter_list(l) {
     } return false
   };
   
-  console.log(validatePIN('-6.348'))
+  console.log(validatePIN('-6.348'));
+
+  //task 48 Mumbling(7 kyu)
+
+  function accum(s) {
+    let array = s.split("").map((elem, index) => {
+      return (elem.toUpperCase() + elem.toLowerCase().repeat(index))
+    });
+    
+    return array.join('-');
+   };
+   
+   console.log(accum("ZpglnRxqenU"));
   
