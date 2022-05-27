@@ -568,4 +568,3 @@ function filter_list(l) {
    }
    
    console.log(getMiddle("testing"));
-   
