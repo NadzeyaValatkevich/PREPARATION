@@ -568,3 +568,13 @@ function filter_list(l) {
    }
    
    console.log(getMiddle("testing"));
+
+   //task 50 You're a square!
+   var isSquare = function(n){
+    if(Number.isInteger(Math.sqrt(n))) {
+        return true 
+  } else return false;
+}
+
+  console.log(isSquare(25))
+  
