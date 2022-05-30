@@ -558,3 +558,23 @@ function filter_list(l) {
    
    console.log(accum("ZpglnRxqenU"));
   
+   // task 49 Get the Middle Character
+   function getMiddle(s) {
+    if(s.length % 2 === 0){
+   return s.slice(((s.length / 2) - 1), (s.length / 2) + 1)
+    } else {
+   return s.charAt(Math.floor(s.length / 2))
+    }
+   }
+   
+   console.log(getMiddle("testing"));
+
+   //task 50 You're a square!
+   var isSquare = function(n){
+    if(Number.isInteger(Math.sqrt(n))) {
+        return true 
+  } else return false;
+}
+
+  console.log(isSquare(25))
+  
