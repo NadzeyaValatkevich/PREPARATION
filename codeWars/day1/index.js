@@ -576,5 +576,20 @@ function filter_list(l) {
   } else return false;
 }
 
-  console.log(isSquare(25))
-  
+  console.log(isSquare(25));
+
+  //task 51 Exes and Ohs
+  function XO(str) {
+    let array = str.split('');
+    let x = 'x';
+    let o = 'o';
+    if(array.includes('x') && array.includes('o')) {
+        return true
+    } else if (!array.includes('x') && !array.includes('o')) {
+        return true
+    } else {
+        return false
+    }   
+};
+
+console.log(XO('kl'))
