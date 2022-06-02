@@ -593,3 +593,16 @@ function filter_list(l) {
 };
 
 console.log(XO('kl'))
+
+//task 52 Jaden Casing Strings
+String.prototype.toJadenCase = function () {
+  return this.split(' ').map((elem) => elem.split('').map((el, index) => {
+     
+      if(index === 0) {
+          return el.toUpperCase()
+      } else return el
+  } ).join('')).join(' ')
+};
+
+let str = "How can mirrors be real if our eyes aren't real"
+console.log(str.toJadenCase())
