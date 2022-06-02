@@ -576,5 +576,33 @@ function filter_list(l) {
   } else return false;
 }
 
-  console.log(isSquare(25))
-  
+  console.log(isSquare(25));
+
+  //task 51 Exes and Ohs
+  function XO(str) {
+    let array = str.split('');
+    let x = 'x';
+    let o = 'o';
+    if(array.includes('x') && array.includes('o')) {
+        return true
+    } else if (!array.includes('x') && !array.includes('o')) {
+        return true
+    } else {
+        return false
+    }   
+};
+
+console.log(XO('kl'))
+
+//task 52 Jaden Casing Strings
+String.prototype.toJadenCase = function () {
+  return this.split(' ').map((elem) => elem.split('').map((el, index) => {
+     
+      if(index === 0) {
+          return el.toUpperCase()
+      } else return el
+  } ).join('')).join(' ')
+};
+
+let str = "How can mirrors be real if our eyes aren't real"
+console.log(str.toJadenCase())
