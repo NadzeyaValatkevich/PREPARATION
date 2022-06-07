@@ -624,3 +624,18 @@ function likes(names) {
 }
 
 console.log(likes(["Peter", "Alex"]))
+
+//task 54 Shortest Word
+function findShort(s){
+  let array = s.split(' ');
+ array.sort((a, b) => {
+    if(a.length > b.length) {
+      return 1
+    } else if(a.length === b.length) {
+      return 0
+    } else return -1
+  });
+  return array[0].length
+ }
+ 
+ console.log(findShort("bitcoin take over the world maybe who knows perhaps")) 
