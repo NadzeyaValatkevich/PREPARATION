@@ -639,3 +639,23 @@ function findShort(s){
  }
  
  console.log(findShort("bitcoin take over the world maybe who knows perhaps")) 
+
+ //task 55 Check the exam
+ function checkExam(array1, array2) {
+  let sum = 0;
+  for (let i = 0; i <= array1.length - 1; i++) {
+    
+      if(array1[i] === array2[i]) {
+         sum += 4
+      } else if(array2[i] === '' ) {
+          sum += 0
+      } else {
+        sum -= 1
+      }
+    }
+   return sum < 0 ? 0 : sum
+
+ 
+ };
+
+console.log(checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]))
